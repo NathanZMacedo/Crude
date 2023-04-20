@@ -1,4 +1,11 @@
 function sendData() {
+
+    console.log(editMode);
+    if(editMode){
+        const id = document.getElementById("submit").getAttribute("data-id")
+        editData(id)
+        return
+    }
     const name = document.getElementById("name").value;
     const email = document.getElementById("email").value;
 

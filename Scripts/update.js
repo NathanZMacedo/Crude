@@ -1,4 +1,4 @@
-const urlDelete = "https://crud-javascript-ff277-default-rtdb.firebaseio.com/pessoas/"
+const urlEdit = "https://crud-javascript-ff277-default-rtdb.firebaseio.com/pessoas/"
 // DIFERENÇA DE PATCH VS PUT
 // PATCH MODIFICA APENAS OS ATRIBUTOS ENVIADOS
 // PUT MODIFICCA O OBJETO INTEIRO
@@ -37,5 +37,5 @@ async function editData(id){
             document.getElementById('submit').innerText="Cadastrar!";
             editMode= document.getElementById("submit").innerHTML === "Edit Aqui!";
         })
-            .catch(err=>cpnsole.log("erro ao editar",err));
+            .catch(err=>console.log("erro ao editar",err));
 }
