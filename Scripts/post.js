@@ -22,6 +22,9 @@ function sendData() {
 
     })
         .then(resposta => resposta.json())
-        .then(data => console.log(data))
+        .then(data =>{
+            console.log(data)
+            PegarDados()
+        })
         .catch(erro=>console.error(erro))
 }
